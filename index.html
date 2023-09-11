@@ -65,10 +65,9 @@
       </tbody>
   </table>
   <hr>
-    <h2>Code Section</h2>
+  <h2>Code Snippet from Stack Overflow</h2>
 
-    <blockquote>
-        Here's a relevant question from Stack Overflow:
+
 
         <p>
             <em>
@@ -78,45 +77,21 @@
 
         <p>
             You can find the answer and more details on this question on Stack Overflow by following this link:
-            <a href=https://stackoverflow.com/questions/41738362/how-to-include-pagination-in-a-wordpress-custom-post-type-query</a>
-            <a href="https://css-tricks.com/snippets/wordpress/paginate-custom-post-types/"</a>
+            <a href="https://stackoverflow.com/questions/2504071/how-to-vertically-center-an-element-in-css" target="_blank">Stack Overflow - Vertically Center an Element in CSS</a>
         </p>
-    </blockquote>
+  
 
     <pre>
         <code>
-          <?php 
-            $temp = $wp_query; 
-            $wp_query = null; 
-            $wp_query = new WP_Query(); 
-            $wp_query->query('showposts=6&post_type=news'.'&paged='.$paged); 
-
-            while ($wp_query->have_posts()) : $wp_query->the_post(); 
-          ?>
-
-            <!-- LOOP: Usual Post Template Stuff Here-->
-
-          <?php endwhile; ?>
-
-          <nav>
-              <?php previous_posts_link('&laquo; Newer') ?>
-              <?php next_posts_link('Older &raquo;') ?>
-          </nav>
-
-          <?php 
-            $wp_query = null; 
-            $wp_query = $temp;  // Reset
-          ?>
-          
-          
+            /* Your code snippet goes here */
+            .centered-element {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
         </code>
     </pre>
-
-
-
-
-  
-  
 
 
 </body>
